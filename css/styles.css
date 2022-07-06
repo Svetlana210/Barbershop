@@ -1,0 +1,147 @@
+/* главные стили */
+:root {
+  --text-color: #555555;
+  --accent-color: #ff6c00;
+  --title-color: #303030;
+  --text-white-color: #ffffff;
+  --table-text-color: #9da4bd;
+  --background-section-color: #f7f7f7;
+  --small-text-grey-color: rgba(157, 164, 189, 0.6);
+}
+body {
+  color: var(--text-color);
+  background-color: var(--text-white-color);
+}
+ul {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* навигация */
+.nav-link,
+.contact-link {
+  color: var(--text-white-color);
+  background-color: #303030;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+.button-header {
+  color: var(--text-white-color);
+  background-color: #303030;
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+.button {
+  color: var(--title-color);
+  background-color: var(--text-white-color);
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+/* соц.сети */
+.network-link {
+  color: var(--title-color);
+}
+.network-link:hover,
+.network-link:focus {
+  color: var(--accent-color);
+}
+/* герой секция */
+.hero-title {
+  color: var(--text-white-color);
+  background-color: #303030;
+}
+.hero-text {
+  color: var(--table-text-color);
+}
+.hero-text-en {
+  color: var(--small-text-grey-color);
+}
+/* о нас */
+.about-us-text-small {
+  color: var(--title-color);
+}
+.about-us-title {
+  color: var(--title-color);
+}
+/* услуги и цены */
+.price-text {
+  color: var(--small-text-grey-color);
+}
+.price-title {
+  color: var(--text-white-color);
+  background-color: #303030;
+}
+.price-table {
+  color: var(--table-text-color);
+}
+/* преимущества */
+.feature-title {
+  color: var(--title-color);
+}
+.feature-text {
+  color: var(--title-color);
+}
+.feature-text-small {
+  color: var(--title-color);
+}
+/* наши мастера */
+.master-text {
+  color: var(--title-color);
+}
+.master-title {
+  color: var(--title-color);
+}
+.master-subtitle {
+  color: var(--title-color);
+}
+.master-text-small {
+  color: var(--accent-color);
+}
+/* портфолио */
+.portfolio-text {
+  color: var(--title-color);
+}
+/* футер */
+.footer-title {
+  color: var(--text-white-color);
+  background-color: #303030;
+}
+.footer-address,
+.footer-contact {
+  color: var(--table-text-color);
+}
+.footer-address:hover,
+.footer-address:focus {
+  color: var(--accent-color);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
+.footer-subtitle {
+  color: var(--text-white-color);
+  background-color: #303030;
+}
+.footer-text {
+  color: var(--table-text-color);
+}

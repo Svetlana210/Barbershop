@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Barbershop</title>
   </head>
   <body>
@@ -11,22 +12,28 @@
       <!--навигация-->
       <nav class="nav">
         <!--лого-->
-        <a href="./index.html" class="logo-link">
+        <a href="./index.html" class="logo-link link">
           <img src="./images/Logo.jpg" alt="логотип" width="69" height="55"
         /></a>
         <!--меню-->
         <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link">О нас</a></li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Услуги и цены</a>
+            <a href="#" class="nav-link link">Услуги и цены</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">Мастера</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link">Мастера</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link link">Контакты</a>
+          </li>
         </ul>
       </nav>
       <!--контакты-->
-      <a href="tel:+380441111111" class="contact-link">+38 044 111 11 11</a>
-      <button type="button" class="button">онлайн-запись</button>
+      <a href="tel:+380441111111" class="contact-link link"
+        >+38 044 111 11 11</a
+      >
+      <button type="button" class="button-header">онлайн-запись</button>
     </header>
     <main>
       <!--секция-герой-->
@@ -34,10 +41,15 @@
         <!--соц.сети-->
         <div class="social-network">
           <ul class="network-list">
-            <li lang="en"><a href="#" class="network-item"></a>Instagram</li>
-            <li lang="en"><a href="#" class="network-item"></a>Youtube</li>
+            <li lang="en" class="network-item">
+              <a href="#" class="network-link link">Instagram</a>
+            </li>
+            <li lang="en" class="network-item">
+              <a href="#" class="network-link link">Youtube</a>
+            </li>
           </ul>
         </div>
+        <!--герой-часть-->
         <div class="hero-part">
           <p class="hero-text-en" lang="en">A hair salon for men in Kyiv</p>
           <h1 class="hero-title">BarberShop</h1>
@@ -104,7 +116,7 @@
             <td>от 200 грн.</td>
           </tr>
         </table>
-        <table>
+        <table class="price-table">
           <tr>
             <td>Cтрижка у стажера</td>
             <td>от 50 грн.</td>
@@ -126,6 +138,7 @@
       </section>
       <!--почему мы-->
       <section class="feature-section">
+        <h2 class="visually-hidden">Скрытый</h2>
         <ul class="feature-list">
           <li class="feature-item">
             <h2 class="feature-title">600</h2>
@@ -190,7 +203,7 @@
       </section>
       <!--портфолио-->
       <section class="portfolio-section">
-        <h2 class="portfolio-title">Пустой заголовок</h2>
+        <h2 class="visually-hidden">Пустой заголовок</h2>
         <p class="portfolio-text">
           На латинском языке “барба” означает “борода”
         </p>
@@ -234,21 +247,24 @@
     <footer class="footer">
       <h2 class="footer-title">Контакты</h2>
       <!--адресс-->
-      <address class="footer-address">
+      <address>
         <a
           href="https://goo.gl/maps/Fjr7X9AUUXjCh4fy8"
           target="_blank"
           rel="noopener nofollow"
+          class="footer-address link"
           >ул. Васильковая, 7А Киев, 08132</a
         >
       </address>
       <!--контакты-->
       <ul class="footer-list">
         <li class="footer-item">
-          <a href="tel:380441111111" class="footer-contact">38 044 111 11 11</a>
+          <a href="tel:380441111111" class="footer-contact link"
+            >38 044 111 11 11</a
+          >
         </li>
         <li class="footer-item">
-          <a href="mailto:barbershop@email.com" class="footer-contact"
+          <a href="mailto:barbershop@email.com" class="footer-contact link"
             >barbershop@email.com</a
           >
         </li>
