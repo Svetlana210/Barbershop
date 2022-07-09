@@ -1,4 +1,3 @@
-/* главные стили */
 :root {
   --text-color: #555555;
   --accent-color: #ff6c00;
@@ -13,6 +12,7 @@ body {
   background-color: var(--text-white-color);
   font-family: Open Sans, sans-serif;
 }
+/* COMPONENTS */
 ul {
   list-style: none;
 }
@@ -37,7 +37,36 @@ h2 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* навигация */
+
+.button {
+  border-radius: 25px;
+
+  color: var(--title-color);
+  background-color: var(--text-white-color);
+  border-color: var(--accent-color);
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.suptitle-theme-dark {
+  color: var(--small-text-grey-color);
+}
+.suptitle-theme-light {
+  color: var(--title-color);
+}
+/* COMPONENTS */
+/* NAV */
 .nav-link,
 .contact-link {
   color: var(--text-white-color);
@@ -60,8 +89,10 @@ h2 {
   color: var(--accent-color);
 }
 .button-header {
-  color: var(--text-white-color);
-  background-color: #303030;
+  border-radius: 25px;
+
+  color: var(--title-color);
+  background-color: var(--text-white-color);
   border-color: var(--accent-color);
   cursor: pointer;
 
@@ -71,19 +102,13 @@ h2 {
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
-.button {
-  color: var(--title-color);
-  background-color: var(--text-white-color);
-  border-color: var(--accent-color);
-  cursor: pointer;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+.button-header:hover,
+.button-header:focus {
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
 }
-/* соц.сети */
+/* NAV */
+/* NETWORK */
 .network-link {
   color: var(--title-color);
 
@@ -96,7 +121,8 @@ h2 {
 .network-link:focus {
   color: var(--accent-color);
 }
-/* герой секция */
+/* NETWORK */
+/* HERO*/
 .hero-title {
   color: var(--text-white-color);
   background-color: #303030;
@@ -107,52 +133,27 @@ h2 {
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
-.hero-text-en {
-  color: var(--small-text-grey-color);
-
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-/* о нас */
-.about-us-text-small {
-  color: var(--title-color);
-
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.about-us-title {
+/* HERO */
+/* ABOUT */
+.about-title {
   color: var(--title-color);
 
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
 }
-.about-us-text {
+.about-text {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
-.about-us-text-big {
+.about-text-big {
   font-size: 14px;
   line-height: 1.87;
   letter-spacing: 0.02em;
 }
-/* услуги и цены */
-.price-text {
-  color: var(--small-text-grey-color);
-
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
+/* ABOUT */
+/* PRICE*/
 .price-title {
   color: var(--text-white-color);
   background-color: #303030;
@@ -165,11 +166,10 @@ h2 {
   color: var(--table-text-color);
   font-size: 18px;
   line-height: 1.67;
-  /* identical to box height, or 167% */
-
   letter-spacing: 0.02em;
 }
-/* преимущества */
+/* PRICE */
+/* FEATURES */
 .feature-title {
   color: var(--title-color);
 
@@ -186,15 +186,7 @@ h2 {
   font-size: 11px;
   line-height: 1.37;
 }
-.feature-text-small {
-  color: var(--title-color);
 
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.37;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
 .feature-big-title {
   color: var(--title-color);
 
@@ -208,16 +200,8 @@ h2 {
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
-/* наши мастера */
-.master-text {
-  color: var(--title-color);
-
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.37;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
+/* FEATURES */
+/* MASTERS */
 .master-title {
   color: var(--title-color);
 
@@ -239,16 +223,8 @@ h2 {
   line-height: 1.36;
   letter-spacing: 0.02em;
 }
-/* портфолио */
-.portfolio-text {
-  color: var(--title-color);
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.37;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-/* футер */
+/* MASTERS */
+/* FOOTER */
 .footer-title {
   color: var(--text-white-color);
   background-color: #303030;
@@ -291,3 +267,4 @@ h2 {
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
+/* FOOTER */
