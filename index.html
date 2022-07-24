@@ -18,8 +18,10 @@
         <nav class="nav">
           <!--LOGO-->
           <a href="./index.html" class="logo-link link">
-            <img src="./images/Logo.jpg" alt="логотип" width="69" height="55"
-          /></a>
+            <svg class="logo-icon">
+              <use href="./images/sptite.svg#icon-Logo" width="69" height="55"></use>
+            </svg> 
+          </a>
           <!-- MENU-->
           <ul class="nav-list">
             <li class="nav-item">
@@ -51,7 +53,7 @@
           <div class="social-network">
             <ul class="network-list">
               <li lang="en" class="network-item">
-                <a href="#" class="network-link link">Instagram</a>
+                <a href="#" class="network-link link network-inst">Instagram</a>
               </li>
               <li lang="en" class="network-item">
                 <a href="#" class="network-link link">Youtube</a>
@@ -115,55 +117,23 @@
       <!--PRICES-->
       <section class="price-section section">
         <div class="container">
-          <p class="suptitle">Проведи время в компании лучших мастеров</p>
+          <p class="suptitle suptitle-theme-dark">Проведи время в компании лучших мастеров</p>
           <h2 class="price-title">Услуги и цены</h2>
-          <ul class="price-list">
-          <li class="price-item">
-          <table class="price-table">
-            <tbody>
-              <tr>
-                <td class="price-table-td">Мужская стрижка</td>
-                <td class="price-table-td">от 300 грн.</td>
-              </tr>
-              <tr>
-                <td class="price-table-td">Стрижка бороды</td>
-                <td class="price-table-td">от 200 грн.</td>
-              </tr>
-              <tr>
-                <td class="price-table-td">Стрижка усов</td>
-                <td class="price-table-td">от 200 грн.</td>
-              </tr>
-              <tr>
-                <td class="price-table-td">Бритье опасной бритвой</td>
-                <td class="price-table-td">от 200 грн.</td>
-              </tr>
-            </tbody>
-          </table>
-          </li>
-          <li class="price-item">
-          <table class="price-table">
-            <tbody>
-              <tr>
-                <td class="price-table-td">Cтрижка у стажера</td>
-                <td class="price-table-td">от 50 грн.</td>
-              </tr>
-              <tr>
-                <td class="price-table-td">Стрижка под насадку</td>
-                <td class="price-table-td">от 200 грн.</td>
-              </tr>
-              <tr>
-                <td class="price-table-td">Детская стрижка (до 12 лет)</td>
-                <td class="price-table-td">от 300 грн.</td>
-              </tr>
-              <tr>
-                <td class="price-table-td">Камуфлирование седины</td>
-                <td class="price-table-td">от 200 грн.</td>
-              </tr>
-            </tbody>
-          </table>
-          </li>
-          </ul>
-          <button type="button" class="button">онлайн-запись</button>
+          <div class="price-table">
+            <ul class="price-list price-list-left">
+              <li class="price-item"> Мужская стрижка <span class="underline"></span>от 300 грн.</li>
+              <li class="price-item">Стрижка бороды <span class="underline"></span>от 300 грн.</li>
+              <li class="price-item">Стрижка усов <span class="underline"></span>от 200 грн.</li>
+              <li class="price-item">Бритье опасной бритвой <span class="underline"></span>от 200 грн.</li>
+            </ul>
+            <ul class="price-list price-list-right">
+              <li class="price-item">Cтрижка у стажера <span class="underline"></span>от 50 грн. </li>
+              <li class="price-item">Стрижка под насадку <span class="underline"></span>от 200 грн.</li>
+              <li class="price-item">Детская стрижка (до 12 лет)<span class="underline"></span> от 300 грн.</li>
+              <li class="price-item">Камуфлирование седины <span class="underline"></span>от 200 грн.</li>
+            </ul>
+          </div>
+          <button type="button" class="button price-button">онлайн-запись</button>
         </div>
       </section>
       <!--FEATURES-->
@@ -190,11 +160,11 @@
             </ul>
           </div>
           <div class="right-feature-part">
-            <p class="suptitle">старая традиционная школа</p>
+            <p class="suptitle suptitle-theme-light">старая традиционная школа</p>
             <h2 class="feature-big-title">Почему приходят именно к нам?</h2>
             <p class="feature-text-big">
               О нас говорят только хорошее. Но лучше 1 раз увидеть и
-              прочувtствtовать, чем 10 раз прочитать.
+              прочувствовать, чем 10 раз прочитать.
             </p>
           </div>
         </div>
@@ -202,7 +172,7 @@
       <!--MASTERS-->
       <section class="master-section section">
         <div class="container">
-          <p class="suptitle ">для настоящих ценителей атмосферы</p>
+          <p class="suptitle suptitle-theme-light">для настоящих ценителей атмосферы</p>
           <h2 class="master-title">Наши мастера</h2>
           <ul class="master-list">
             <li class="master-item">
@@ -215,6 +185,30 @@
               <div class="master-text-part">
               <h3 lang="en" class="master-subtitle">John Smith</h3>
               <p lang="en" class="master-text-small">ExtrTeme Barber</p>
+              <ul class="master-icon-list">
+                <li class="icon-item">
+                  <a href="#" class="icon-link">
+                    <svg class="master-icon" width="20" height="20">
+                      <use href="./images/sptite.svg#icon-instagram" ></use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="icon-item"><a href="#" class="icon-link">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./images/sptite.svg#icon-twitter" ></use>
+                  </svg></a>
+                </li>
+                <li class="icon-item"><a href="#" class="icon-link">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./images/sptite.svg#icon-facebook" ></use>
+                  </svg></a>
+                </li>
+                <li class="icon-item"><a href="#" class="icon-link">
+                  <svg class="master-icon"  width="20" height="20">
+                    <use href="./images/sptite.svg#icon-linkedin"></use>
+                  </svg></a>
+                </li>
+              </ul>
               </div>
             </li>
             <li class="master-item">
@@ -227,6 +221,30 @@
               <div class="master-text-part">
               <h3 lang="en" class="master-subtitle">Michele Doe</h3>
               <p lang="en" class="master-text-small">Extreme Barber</p>
+               <ul class="master-icon-list">
+                <li class="icon-item">
+                  <a href="#" class="icon-link">
+                    <svg class="master-icon" width="20" height="20">
+                      <use href="./images/sptite.svg#icon-instagram" ></use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="icon-item"><a href="#" class="icon-link">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./images/sptite.svg#icon-twitter" ></use>
+                  </svg></a>
+                </li>
+                <li class="icon-item"><a href="#" class="icon-link">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./images/sptite.svg#icon-facebook" ></use>
+                  </svg></a>
+                </li>
+                <li class="icon-item"><a href="#" class="icon-link">
+                  <svg class="master-icon"  width="20" height="20">
+                    <use href="./images/sptite.svg#icon-linkedin"></use>
+                  </svg></a>
+                </li>
+              </ul>
               </div>
             </li>
             <li class="master-item">
@@ -239,6 +257,30 @@
               <div class="master-text-part">
               <h3 lang="en" class="master-subtitle">Alan</h3>
               <p lang="en" class="master-text-small">Extreme Barber</p>
+               <ul class="master-icon-list">
+                <li class="icon-item">
+                  <a href="#" class="icon-link">
+                    <svg class="master-icon" width="20" height="20">
+                      <use href="./images/sptite.svg#icon-instagram" ></use>
+                  </svg>
+                  </a>
+                </li>
+                <li class="icon-item"><a href="#" class="icon-link">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./images/sptite.svg#icon-twitter" ></use>
+                  </svg></a>
+                </li>
+                <li class="icon-item"><a href="#" class="icon-link">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./images/sptite.svg#icon-facebook" ></use>
+                  </svg></a>
+                </li>
+                <li class="icon-item"><a href="#" class="icon-link">
+                  <svg class="master-icon"  width="20" height="20">
+                    <use href="./images/sptite.svg#icon-linkedin"></use>
+                  </svg></a>
+                </li>
+              </ul>
               </div>
             </li>
           </ul>
@@ -248,7 +290,7 @@
       <section class="portfolio-section section">
         <div class="container">
           <h2 class="visually-hidden">Пустой заголовок</h2>
-          <p class="portfolio-text suptitle">
+          <p class="portfolio-text suptitle suptitle-theme-light">
             На латинском языке “барба” означает “борода”
           </p>
           <ul class="portfolio-list">
@@ -292,7 +334,7 @@
       <div class="container">
       <div class="contacts">
         <!--CONTACT FORM-->
-        <section>
+        <section class="contact-form-section">
           <h2>Онлайн-запись</h2>
         </section>
         <!--CONTACT INFO-->
@@ -306,7 +348,10 @@
                   target="_blank"
                   rel="noopener nofollow"
                   class="contact-address link"
-                  >ул. Васильковая, 7А Киев, 08132</a
+                  > <svg class="contact-icon" width="24"height="24">
+                    <use href="./images/sptite.svg#icon-map-pin"></use>
+                  </svg>
+                  ул. Васильковая, 7А Киев, 08132</a
                 >
               </li>
               <li class="contact-item">
